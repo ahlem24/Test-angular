@@ -1,0 +1,9 @@
+<h1>Légumes du {{date | date :"dd/MMMM/yyyy" }}</h1>
+<ng-container *ngFor="let t of tabLegumes">
+<app-legume [image]='t.image'[nom]='t.nom'[prix]='t.prix' [frais]='t.frais'></app-legume>
+</ng-container>
+<div>
+        Donner un prix minimum <input type="number" name="p" > <br/>
+        Le nombre de légumes ayant un prix > 
+        
+    </div>

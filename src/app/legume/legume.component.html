@@ -1,0 +1,13 @@
+<ul [ngClass]="{'frais':frais==true}"  >
+    <li>
+        <img [src]='image'>
+        {{nom | uppercase}}
+       prix(kg): {{prix}} 
+       <input type="checkbox" value="frais" [checked]='frais'> frais
+       Quantité <input type="text" nom="q" #q> 
+       <button (click)="onPrix(q.value)" >Calculer prix</button> <br>
+     Prix = {{achat}}
+
+    </li>
+</ul>
+
